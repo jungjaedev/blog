@@ -6,7 +6,7 @@ slogan: 성장는 개발자!
 tags: '#Next.js'
 category: tech
 content: building a blog with next.js
-thumbnail: https://cdn.discordapp.com/attachments/1002228584401870871/1021406195250102342/SPA_with_SSR.png
+thumbnail: https://images.unsplash.com/photo-1665624175386-0b5b0e6bba4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80
 ---
 
 ## ㅇㅇ 이란?
@@ -18,4 +18,4 @@ thumbnail: https://cdn.discordapp.com/attachments/1002228584401870871/1021406195
 
 ## 회고
 
-I made it!
+I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!I made it!

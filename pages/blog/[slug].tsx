@@ -7,10 +7,11 @@ import { marked } from 'marked'
 
 const BlogPage = ({frontMatter, content}: BlogPageProps) => {
   return (
-    <div className="p5">
-      <h1 className="text-2xl py-4">{frontMatter.title}</h1>
-      <article
-        className='prose md:prose-lg lg:prose-xl'
+    <div className="mx-auto max-w-[1080px] px-4 md:px-2">
+      <h1 className="text-2xl py-4">{frontMatter.title}</h1> 
+      <div
+        // className='prose md:prose-lg lg:prose-xl'
+        className='prose-headings:text-black30 prose max-w-none prose-p:text-black20 prose-code:text-blue-400'
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       />
     </div>
