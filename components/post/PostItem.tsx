@@ -17,10 +17,10 @@ const PostItem = ({post} : PostItemProps) => {
         />
       </div>
       <div
-        className="mb-2 h-[42px] cursor-pointer overflow-hidden truncate text-xl font-bold leading-[42px] dark:text-darkText"
+        className="mb-2 h-[42px] cursor-pointer overflow-hidden truncate text-xl font-bold leading-[42px]"
       >{post.title}</div>
       <div
-        className="line-clamp3 mb-3 h-[78px] w-full cursor-pointer font-normal leading-[26px] tracking-[-0.03em] text-[#525252] dark:text-[#D1D5DB]"
+        className="line-clamp3 mb-3 h-[78px] w-full cursor-pointer font-normal leading-[26px] tracking-[-0.03em] text-[#525252]"
       >
         {post.content}
       </div>

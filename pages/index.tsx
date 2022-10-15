@@ -8,6 +8,7 @@ import { PostList } from 'components/post/PostList';
 
 
 const Home: NextPage<Posts> = ({posts}: Posts) => {
+  posts.sort((a, b)=> new Date(b.frontMatter.date).valueOf() - new Date(a.frontMatter.date).valueOf())
   return (
     <>
       <Head>
