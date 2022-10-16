@@ -11,7 +11,6 @@ interface BlogPageProps {
 }
 
 const BlogPage = ({frontMatter, content}: BlogPageProps) => {
-  console.log(content)
   return (
     <div className="mx-auto max-w-[1080px] px-4 md:px-2">
       <PostTopSection frontMatter={frontMatter}/>

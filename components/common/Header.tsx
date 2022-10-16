@@ -2,10 +2,7 @@ import { useRouter } from "next/router";
 
 const Header = () => {
   const router = useRouter();
-  // const navList = [
-  //   { content: "모든 글", route: "/" },
-  //   { content: "소개", route: "/about" },
-  // ];
+
   const onMoveMainHandler = () => {
     router.push("/");
   };
@@ -20,7 +17,6 @@ const Header = () => {
             Tech.blog
           </div>
           {/* <div className="flex items-center space-x-8 px-2"> */}
-            {/* {navList.map()} */}
             {/* <div>a</div> */}
             {/* <div>b</div> */}
           {/* </div> */}
