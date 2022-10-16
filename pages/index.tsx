@@ -1,6 +1,5 @@
 import type { NextPage, GetStaticProps } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 import fs from "fs";
 import matter from 'gray-matter';
 import { Posts } from "types/posts";
@@ -27,7 +26,7 @@ const Home: NextPage<Posts> = ({posts}: Posts) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps = () => {
   // get the post
   const files = fs.readdirSync("posts");
   const posts = files.map((filename) => {

@@ -5,7 +5,6 @@ import { BlogPageProps } from 'types/posts';
 import { marked } from 'marked'
 import PostTopSection from 'components/post/PostTopSection';
 
-
 const BlogPage = ({frontMatter, content}: BlogPageProps) => {
   return (
     <div className="mx-auto max-w-[1080px] px-4 md:px-2">
@@ -21,7 +20,7 @@ const BlogPage = ({frontMatter, content}: BlogPageProps) => {
 
 export default BlogPage;
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = () => {
   // get slug
   const files = fs.readdirSync("posts");
   const paths = files.map((filename) => ({
@@ -36,7 +35,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   }
 }
 
-export const getStaticProps: GetStaticProps = async (context) => {
+export const getStaticProps: GetStaticProps = (context) => {
   // get content for each blog
   const mdfile = fs.readFileSync(`posts/${context.params?.slug}.md`);
   const { data: frontMatter, content } = matter(mdfile);
