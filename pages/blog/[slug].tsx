@@ -1,11 +1,17 @@
 import fs from 'fs';
 import { GetStaticProps, GetStaticPaths, } from 'next';
 import matter from 'gray-matter'
-import { BlogPageProps } from 'types/posts';
+import { frontMatterProps  } from 'types/posts';
 import { marked } from 'marked'
 import PostTopSection from 'components/post/PostTopSection';
 
+interface BlogPageProps { 
+  frontMatter: frontMatterProps;
+  content: string;
+}
+
 const BlogPage = ({frontMatter, content}: BlogPageProps) => {
+  console.log(content)
   return (
     <div className="mx-auto max-w-[1080px] px-4 md:px-2">
       <PostTopSection frontMatter={frontMatter}/>

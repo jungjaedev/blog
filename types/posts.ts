@@ -20,11 +20,6 @@ export interface Posts {
   type?: string;
 }
 
-export interface BlogPageProps {
-  frontMatter: frontMatterProps,
-  content: string,
-}
-
 export interface PostItemProps {
   post: frontMatterProps;
 }
