@@ -12,7 +12,7 @@ export interface frontMatterProps {
 
 export interface Post {
   slug?: string;
-  frontMatter: {[key:string]:string};
+  frontMatter: frontMatterProps;
 }
 
 export interface Posts {
@@ -21,7 +21,7 @@ export interface Posts {
 }
 
 export interface BlogPageProps {
-  frontMatter: { [key: string]: string },
+  frontMatter: frontMatterProps,
   content: string,
 }
 

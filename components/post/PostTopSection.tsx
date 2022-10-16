@@ -3,7 +3,7 @@ import { Post } from "types/posts";
 const PostTopSection = ({ frontMatter }: Post) => {
   const { title, date, thumbnail, tags } = frontMatter;
   const tagsList = tags?.split(" ");
-  console.log(tagsList)
+
   return (
     <div className="mx-auto mb-8 max-w-[1080px] px-4 md:px-0">
       <div className="mb-8 flex flex-col items-center justify-center">
