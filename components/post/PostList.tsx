@@ -6,9 +6,9 @@ export const PostList = ({posts} : Posts) => {
   return (
     <main>
       <div className="mx-auto grid max-w-[768px] gap-y-4 px-4 pb-[100px] md:max-w-[1080px] md:grid-cols-3 md:gap-x-6 md:gap-y-[30px]">
-        {posts.map((post) => {
+        {posts.map((post, i) => {
           return (
-            <Link key={post.slug} href={`/blog/${post.slug}`}>
+            <Link key={i} href={`/blog/${post.slug}`}>
               <a>
                 <PostItem post={post.frontMatter} />
               </a>
