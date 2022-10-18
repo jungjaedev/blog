@@ -11,6 +11,7 @@ interface BlogPageProps {
 }
 
 const BlogPage = ({frontMatter, content}: BlogPageProps) => {
+  console.log(frontMatter)
   return (
     <div className="mx-auto max-w-[1080px] px-4 md:px-2">
       <PostTopSection frontMatter={frontMatter}/>
@@ -42,8 +43,20 @@ export const getStaticPaths: GetStaticPaths = () => {
 
 export const getStaticProps: GetStaticProps = (context) => {
   // get content for each blog
-  let slugData = context.params ? context.params.slug : null;
-  const mdfile = fs.readFileSync(`posts/${slugData}.md`);
+  if (!context.params || !context.params.slug) {
+    const mdfile = fs.readFileSync(`hello-world.md`);
+    const { data: frontMatter, content } = matter(mdfile);
+
+    return {
+      props: {
+        frontMatter,
+        content,
+      }
+    }
+  }
+
+  
+  const mdfile = fs.readFileSync(`posts/${context.params.slug}.md`);
   const { data: frontMatter, content } = matter(mdfile);
 
   return {
