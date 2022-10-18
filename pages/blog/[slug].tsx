@@ -56,7 +56,7 @@ export const getStaticProps: GetStaticProps = (context) => {
   }
 
   
-  const mdfile = fs.readFileSync(`posts/${context.params.slug}.md`);
+  const mdfile = fs.readFileSync(`posts/${context.params?.slug}.md`);
   const { data: frontMatter, content } = matter(mdfile);
 
   return {

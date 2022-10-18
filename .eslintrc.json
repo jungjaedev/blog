@@ -2,9 +2,7 @@
   "extends": [
     "eslint:recommended",
     "next/core-web-vitals",
-    "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+    "plugin:@typescript-eslint/recommended"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",
@@ -14,6 +12,12 @@
   "ignorePatterns": ["dist/", "node_modules/"],
   "rules": {
     "react/no-unescaped-entities": "off",
-    "@next/next/no-page-custom-font": "off"
+    "@next/next/no-page-custom-font": "off",
+    "@next/next/no-img-element": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-filename-extension": 0,
+    "no-unused-vars": 1,
+    "@typescript-eslint/no-var-requires": 0
   }
 }
