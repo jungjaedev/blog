@@ -44,7 +44,7 @@ export const getStaticPaths: GetStaticPaths = () => {
 export const getStaticProps: GetStaticProps = (context) => {
   // get content for each blog
   if (!context.params || !context.params.slug) {
-    const mdfile = fs.readFileSync(`hello-world.md`);
+    const mdfile = fs.readFileSync(`posts/hello-world.md`);
     const { data: frontMatter, content } = matter(mdfile);
 
     return {
