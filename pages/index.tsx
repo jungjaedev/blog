@@ -11,7 +11,7 @@ const Home: NextPage<Posts> = ({posts}: Posts) => {
   return (
     <>
       <Head>
-        <title>Blog</title>
+        <title>Tech Blog</title>
         <meta charSet="UTF-8" />
         <meta name="description" content="성장하는 개발자" />
         {/* <meta

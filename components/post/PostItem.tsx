@@ -7,7 +7,7 @@ const PostItem = ({post} : PostItemProps) => {
     else if (category === "etc") return "text-[#ff3399]";
   };
   return (
-    <div className="w-full transition ease-in-out delay-50 hover:-translate-y-1">
+    <div className="w-full p-3 shadow-md transition ease-in-out delay-50 hover:-translate-y-1">
       <div className="mb-3 flex aspect-thumbnail w-full cursor-pointer items-center justify-center bg-[#D9D9D9]"
       >
         <img

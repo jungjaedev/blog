@@ -12,7 +12,7 @@ const PostTopSection = ({ frontMatter }: Post) => {
         </div>
         <div className="py-5 text-base font-normal text-gray100">{date}</div>
         <img
-          className="aspect-contents object-contain"
+          className="aspect-contents w-full object-contain"
           src={thumbnail}
           alt="thumbnail"
         ></img>
