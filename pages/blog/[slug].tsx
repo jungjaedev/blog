@@ -11,12 +11,10 @@ interface BlogPageProps {
 }
 
 const BlogPage = ({frontMatter, content}: BlogPageProps) => {
-  console.log(frontMatter)
   return (
     <div className="mx-auto max-w-[1080px] px-4 md:px-2">
       <PostTopSection frontMatter={frontMatter}/>
       <div
-        // className='prose md:prose-lg lg:prose-xl'
         className='prose-headings:text-black30 prose max-w-none prose-p:text-black20 prose-code:text-blue-400'
         dangerouslySetInnerHTML={{ __html: marked(content) }}
       />
