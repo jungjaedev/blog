@@ -6,7 +6,7 @@ slogan: 성장하는 개발자
 tags: '#defer #async'
 category: tech
 content: defer, async 두 옵션의 차이
-thumbnail: https://user-images.githubusercontent.com/69428509/196643487-d51b7791-9c8a-4a75-b43d-14777dca8359.png
+thumbnail: https://user-images.githubusercontent.com/69428509/197548672-3eb24c3b-e99c-4de7-92f5-c983e5a847c9.jpg
 ---
 
 ## 📒 MVC

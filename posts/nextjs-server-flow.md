@@ -6,7 +6,7 @@ slogan: 성장하는 개발자
 tags: '#Next.js'
 category: tech
 content: yarn start 스크립트를 실행했을 때 실행되는 코드
-thumbnail: https://user-images.githubusercontent.com/69428509/196614527-df9d5d90-861d-473c-a589-a9cb8605e33a.png
+thumbnail: https://user-images.githubusercontent.com/69428509/197548413-7f74b293-22c7-4d6f-947f-e7b5f8875c4f.jpg
 ---
 
 ## Next.js
