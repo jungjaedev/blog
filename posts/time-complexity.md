@@ -80,6 +80,47 @@ function solution(n) {
 - 𝑂(2^n)
 - 𝑂(n!)
 
+---
+
+#### 더 효율적인 solution
+
+- **예시)** 중복 된 문자가 있는 경우 `false`, 아니면 `true`를 구하는 알고리즘
+- 입력 예시
+  - ex1) `[a,b,c,d,f,a]`
+  - ex2) `[b,j,d,b,c,k]`
+
+첫번째 솔루션 - 𝑂(n²)
+
+```javascript
+function solution(arr) {
+  for (let i = 0; i < arr[i]; i++) {
+    for (let j = i + 1; j < arr[i]; j++) {
+      if (arr[i] === arr[j]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+```
+
+두번째 솔루션 - 𝑂(n)
+
+```javascript
+function solution(arr) {
+  let map = new Map();
+  for(let i = 0; i < arr[i]; i++) {
+    if(map.has(arr[i]) {
+      return false;
+    }
+    map.set(arr[i], true);
+  }
+  return true;
+}
+```
+
+---
+
 ### 생각해 볼 내용.
 
 - 최악의 상황이란?
