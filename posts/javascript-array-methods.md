@@ -1,9 +1,9 @@
 ---
-title: [Javascript] Array Methods
+title: "[Javascript] Array Methods"
 date: 2021.06.06
 author: Jung jaewon
 slogan: 성장하는 개발자
-tags: '#Array_Methods'
+tags: "#Array_Methods"
 category: tech
 content: about javascript array methods
 thumbnail: https://user-images.githubusercontent.com/69428509/199263252-e688a744-b4e5-4f95-9397-96e30ce65a1c.jpg
@@ -17,9 +17,9 @@ thumbnail: https://user-images.githubusercontent.com/69428509/199263252-e688a744
 
 ```javascript
 //  Q. make a string out of an array
-const fruits = ['mango', 'melon', 'peach'];
+const fruits = ["mango", "melon", "peach"];
 const result = fruits.join();
-const result2 = fruits.join(' ');
+const result2 = fruits.join(" ");
 
 console.log(result); // mango,melon,peach
 console.log(result2); // mango melon peach
@@ -34,8 +34,8 @@ console.log(typeof result); // "string"
 
 ```javascript
 // Q. make an array out of a string
-const fruits = 'cherry,melon,peach';
-const result = fruits.split(',');
+const fruits = "cherry,melon,peach";
+const result = fruits.split(",");
 
 console.log(result); // ["cherry", "melon", "peach"]
 ```
@@ -114,7 +114,7 @@ console.log(result); // Student {name: "C", age: 30, enrolled: true, score: 90}
 - #### Returns the elements of an array that meet the condition specified in a callback function.
 
 ```javascript
-const result = students.filter(student => student.enrolled);
+const result = students.filter((student) => student.enrolled);
 
 console.log(result); // [Student, Student, Student]
 ```
@@ -140,12 +140,12 @@ console.log(result); // [45, 80, 90, 66, 88]
 
 ```javascript
 // check if there is a student with the score lower than 50
-const result = students.some(student => student.score < 50);
+const result = students.some((student) => student.score < 50);
 
 console.log(result); // true
 
 // use every()
-const result2 = !students.every(student => student.score >= 50);
+const result2 = !students.every((student) => student.score >= 50);
 
 console.log(result2); // true
 ```
@@ -171,8 +171,8 @@ console.log(result / students.length); // 73,8
 //make a string containing all the scores bigger than 50
 // result should be: '80, 90, 66, 88'
 const result = students
-  .map(student => student.score)
-  .filter(score => score >= 50)
+  .map((student) => student.score)
+  .filter((score) => score >= 50)
   .join();
 
 console.log(result); // 80,90,66,88
@@ -187,7 +187,7 @@ console.log(result); // 80,90,66,88
 // sorted in ascending order
 // result should be: '45, 66, 80, 88 90'
 const result = students
-  .map(student => student.score)
+  .map((student) => student.score)
   .sort((a, b) => a - b)
   .join();
 
