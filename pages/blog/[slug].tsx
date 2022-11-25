@@ -21,6 +21,7 @@ const BlogPage = ({ frontMatter, content }: BlogPageProps) => {
         <meta charSet="UTF-8" />
         <meta name="description" content={frontMatter.content} />
         <meta name="description" content={frontMatter.tags} />
+        <meta name="description" content={content} />
         <meta property="og:image" content={frontMatter.thumbnail} />
         <meta property="og:description" content={frontMatter.content} />
         <meta property="og:title" content={frontMatter.title} />
