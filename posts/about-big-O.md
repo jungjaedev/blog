@@ -145,7 +145,7 @@ O(n² + 5n + 8) -> O(n²)
   - 참조타입도 대부분(배열, 객체) O(n)이라고 생각함 (배열의 길이나 객체 키의 갯수)
 
 ```javascript
-// 예시 2
+// 예시 1
 function sum(arr) {
   let total = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -173,3 +173,49 @@ function double(arr) {
 ```
 
 ---
+
+## Objects & Arrays
+
+### Objects
+
+- 객체는 언제사용하는가
+  - 순서가 필요없을 때
+  - 빠른 접근, 삽입, 제거가 필요할 때
+
+#### Big-O of Objects
+
+- Insertion : O(1)
+- Removal : O(1)
+- Searching : O(N)
+- Access : O(1)
+
+#### Big-O of Object Methods
+
+- Object.keys : O(N)
+- Object.values : O(N)
+- Object.entries : O(N)
+- hasOwnProperty : O(1)
+
+### Arrays
+
+- 배열은 언제사용하는가
+  - 순서가 필요할 때
+  - 빠른 접근, 삽입, 제거가 필요할 때
+
+#### Big-O of Arrays
+
+- Insertion & Removal : It depends...
+  - 맨 끝에 push하거나 pop한다면 O(1)
+  - 앞에 추가하거나 삭제할 경우 배열에 있는 요소들에게 새로운 인덱스를 배정해줘야함 -> O(N)
+- Searching : O(N)
+- Access : O(1)
+
+#### Big-O of Array Methods
+
+- push & pop : O(1)
+- shift & unshift : O(N)
+- concat & slice & splice : O(N)
+- sort : O(nlogn)
+- forEach / map / filter / reduce : O(N)
+
+> 결론 - 객체는 거의 모든 것이 빠르지만 정렬되어있지 않음, 배열은 정렬되어 있지만 앞에 추가,삭제 시 오래걸림.
